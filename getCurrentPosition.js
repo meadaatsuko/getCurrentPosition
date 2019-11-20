@@ -4,6 +4,10 @@ function getCurrentPositionEvent(argument) {
 		// body...
 		console.log(Position.coords.latitude);
 	}
-	navigator.geolocation.getCurrentPosition(successPosition);
+	function errorPosition(error) {
+		// body...
+		console.log(error);
+	}
+	navigator.geolocation.getCurrentPosition(successPosition,errorPosition);
 }
 EventUtil.addEvent(window,"load",getCurrentPositionEvent);
