@@ -2,7 +2,9 @@ function getCurrentPositionEvent(argument) {
 	// body...
 	function successPosition(Position) {
 		// body...
-		console.log(Position.coords.latitude);
+		var positionInfo = "";
+		positionInfo = "纬度: " + Position.coords.latitude + ", 经度: " + Position.coords.longitude + ", 海拔： " + Position.coords.altitude + ".";
+		console.log(positionInfo);
 	}
 	function errorPosition(error) {
 		// body...
