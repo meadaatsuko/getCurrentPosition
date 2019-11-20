@@ -1,4 +1,5 @@
-funtion getCurrentPositionEvent(){
- console.log(1);	
-};
+function getCurrentPositionEvent(argument) {
+	// body...
+	console.log(1);
+}
 EventUtil.addEvent(window,"load",getCurrentPositionEvent);
